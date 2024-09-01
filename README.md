@@ -102,6 +102,10 @@ echo "Uncompression process completed."</pre>
 
 
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
+<h1>Configure your system in such a way that any user of your system creates a
+file then there should not be permission to do any activity in that file.
+Note:- Don’t use the chmod command.
+</h1>
   
