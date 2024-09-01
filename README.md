@@ -108,4 +108,27 @@ echo "Uncompression process completed."</pre>
 file then there should not be permission to do any activity in that file.
 Note:- Don’t use the chmod command.
 </h1>
-  
+
+<h4>To achieve this, the user needs to add <b>umask 0777</b> to both their profile file and the global bash.bashrc file. Once these changes are made and saved, any newly created files will have no permissions by default.</h4>
+
+<h4>We need insert -> umask 0777 for the highlighted files so that we can remove
+the access permissions for the users.</h4>
+
+<pre>
+	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ sudo  nano /etc/profile
+	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ sudo nano /etc/bash.bashrc
+	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ nano ~/ .bashrc
+	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ nano ~/ .zshrc
+	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ source  ~/.zshrc
+    		bash: /home/sigmoid/.zshrc: Permission denied
+	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ touch vikas
+	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ ls -ltr vikas
+
+		---------- 1 sigmoid sigmoid 0 Aug 30 22:31 vikas
+	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ 
+</pre>
+
+![A5](https://github.com/user-attachments/assets/2963b2a7-72d6-4dcc-9ce1-091c4fa3b1ad)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+
