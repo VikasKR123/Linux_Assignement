@@ -55,6 +55,46 @@ command.<h1>
 <b>7.</b> When you list the files with ls -ltr, the compresse file will be displayed as research.gz.<br>
 <b>8.</b>To locate and unzip the research.gz file, you need to execute a script that finds the file and decompresses it.<br>
 </p>
+<pre>#!/bin/bash
+
+FILE_NAME="research"
+
+# Find all files named 'research' with any compression extension
+find / -type f -name "${FILE_NAME}.*" 2>/dev/null | while read -r COMPRESSED_FILE; do
+    echo "Found compressed file: $COMPRESSED_FILE"
+    
+    # Determine the file type
+    FILE_TYPE=$(file -b "$COMPRESSED_FILE" | awk '{print $1}')
+    
+    # Uncompress based on the file type
+    case "$FILE_TYPE" in
+        gzip)
+            echo "Uncompressing gzip file..."
+            gunzip "$COMPRESSED_FILE"
+            ;;
+        bzip2)
+            echo "Uncompressing bzip2 file..."
+            bunzip2 "$COMPRESSED_FILE"
+            ;;
+        XZ)
+            echo "Uncompressing xz file..."
+            unxz "$COMPRESSED_FILE"
+            ;;
+        Zip)
+            echo "Uncompressing zip file..."
+            unzip "$COMPRESSED_FILE" -d "$(dirname "$COMPRESSED_FILE")"
+            ;;
+        7-zip)
+            echo "Uncompressing 7z file..."
+            7z x "$COMPRESSED_FILE" -o"$(dirname "$COMPRESSED_FILE")"
+            ;;
+        *)
+            echo "Unknown compression type: $FILE_TYPE"
+            ;;
+    esac
+done
+
+echo "Uncompression process completed."</pre>
 
 
 ![A42](https://github.com/user-attachments/assets/68521d3c-c606-45fb-85e0-d001bf18ec94)
