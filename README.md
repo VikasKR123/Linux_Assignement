@@ -43,15 +43,15 @@ command.<h1>
   <h2>You have to find the file and check the compression type and uncompress it.</h2>
   
 <p> 
-<b>1.</b> First, create a file named research in your home directory
-<b>2.</b> Populate the research file with the output of the directory listing
-	  ls -ltr > research
-<b>3.</b>Next, create a directory called compres and then create a research file within that      n     directory
-<b>4.</b> Populate the research file inside the compressed directory with the directory listing
-<b>5.</b>Compress the research file in your home directory using gzip
-<b>6.</b>Update the permissions for the research.gz file to make it executable
-<b>7.</b> When you list the files with ls -ltr, the compresse file will be displayed as research.gz.
-<b>8.</b>To locate and unzip the research.gz file, you need to execute a script that finds the file and decompresses it.
+<b>1.</b> First, create a file named research in your home directory<br>
+<b>2.</b> Populate the research file with the output of the directory listing<br>
+	  ls -ltr > research<br>
+<b>3.</b>Next, create a directory called compres and then create a research file within that      n     directory<br>
+<b>4.</b> Populate the research file inside the compressed directory with the directory listing<br>
+<b>5.</b>Compress the research file in your home directory using gzip<br>
+<b>6.</b>Update the permissions for the research.gz file to make it executable<br>
+<b>7.</b> When you list the files with ls -ltr, the compresse file will be displayed as research.gz.<br>
+<b>8.</b>To locate and unzip the research.gz file, you need to execute a script that finds the file and decompresses it.<br>
 </p>
 
 
