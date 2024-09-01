@@ -132,3 +132,38 @@ the access permissions for the users.</h4>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+<h1>Configure SMTP in localhost</h1>
+
+<pre>
+
+<b>step 1.</b> Downloading sendmail
+<b>step 2.</b> Install Postfix
+<b>step 3.</b> Enable sendmail by using systemctl command
+	
+</pre>
+
+<pre>
+
+root@sigmoid-ThinkPad-L470-W10DG:/etc/mail# systemctl status  sendmail
+● sendmail.service - LSB: powerful, efficient, and scalable Mail Transport Agent
+     Loaded: loaded (/etc/init.d/sendmail; generated)
+     Active: <b style='color:green'>active (running)</b> since Wed 2024-08-28 14:37:39 IST; 1min 18s ago
+       Docs: man:systemd-sysv-generator(8)
+    Process: 23891 ExecStart=/etc/init.d/sendmail start (code=exited, status=0/>
+      Tasks: 1 (limit: 9272)
+     Memory: 2.5M
+     CGroup: /system.slice/sendmail.service
+             └─24066 sendmail: MTA: accepting connections
+</pre>
+
+<pre>
+
+root@sigmoid-ThinkPad-L470-W10DG:/etc/mail# mail -s "mail vikas" vikaskarbail@gmail.com
+Cc: vikaskarbailkr@gmail.com
+hello
+hai
+
+</pre>
+
+<p>and then press ctrl+d then message is sent</p>
