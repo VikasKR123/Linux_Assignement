@@ -59,7 +59,6 @@ command.<h1>
 
 FILE_NAME="research"
 
-# Find all files named 'research' with any compression extension
 find / -type f -name "${FILE_NAME}.*" 2>/dev/null | while read -r COMPRESSED_FILE; do
     echo "Found compressed file: $COMPRESSED_FILE"
     
