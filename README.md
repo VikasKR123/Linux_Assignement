@@ -167,3 +167,41 @@ hai
 </pre>
 
 <p>and then press ctrl+d then message is sent</p>
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<h1>
+<pre>
+Create a service with the name showtime , after starting the service, every minute it should print the current time in a file in the user home directory.
+
+Ex:-
+sudo service showtime start   -> It should start writing in file.
+sudo service showtime stop   -> It should stop writing in file.
+sudo service showtime status -> It should show status.
+</pre>
+</h1>
+
+<pre>
+Login as root and create a directory in root
+ # mkdir -p /usr/local/bin/showtime
+
+Create the shell script file.
+ # nano /usr/local/bin/showtime/showtime.sh
+and then put the below content
+</pre>
+![Screenshot from 2024-08-30 23-03-07](https://github.com/user-attachments/assets/66e80762-4bd7-4a20-9b3a-ea3cdf463ec9)
+
+<pre>
+Create a service file named showtime.service.
+  # nano /etc/systemd/system/showtime.service
+Reload the service.
+  # systemctl daemon-reload
+Start the service.
+  #systemctl start showtime.service
+
+To check the status of the service.
+  # systemctl status showtime.service
+</pre>
+![Screenshot from 2024-08-30 23-12-36](https://github.com/user-attachments/assets/bc35df12-8984-49c3-a278-f6cfa5a7c23e)
+
