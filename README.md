@@ -1,7 +1,7 @@
 <h1>Create a user in your localhost, which should not be able to execute the sudo
 command.<h1>
 
-<pre>
+<h4>
 <ul>
   <li>Use the adduser command to create a new user. For example, let's create a user named vikas.</li>
    <p>sudo useradd vikas<p>
@@ -18,8 +18,7 @@ command.<h1>
    </ol>
 </li>
 </ul>
-</pre>
-
+</h4>
 
 ![A2](https://github.com/user-attachments/assets/fcf180e9-0385-4b7f-942b-31c26d7c1b3e)
 
