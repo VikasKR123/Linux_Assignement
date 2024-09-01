@@ -35,6 +35,8 @@ command.<h1>
 
 ![A32](https://github.com/user-attachments/assets/f76ede5f-117b-45a1-852d-48a4e36f73dc)
 
+![A24](https://github.com/user-attachments/assets/e9c46434-1376-41d1-96bc-b9796671ba88)
+
 ![A31](https://github.com/user-attachments/assets/95590e31-90be-4548-b95b-1b256dd72397)
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -54,6 +56,10 @@ command.<h1>
 <b>8.</b>To locate and unzip the research.gz file, you need to execute a script that finds the file and decompresses it.<br>
 </p>
 
+
+![A42](https://github.com/user-attachments/assets/68521d3c-c606-45fb-85e0-d001bf18ec94)
+
+![A43](https://github.com/user-attachments/assets/d405b5d5-a39e-4b80-b7f5-d386874ece77)
 
 
 
