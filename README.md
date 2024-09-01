@@ -18,7 +18,8 @@ command.<h1>
    </ol>
 </li>
 </ul>
-</p![Screenshot from 2024-09-01 18-43-57](https://github.com/user-attachments/assets/a5b8a632-a437-4664-a456-fef48171fbd3)
+</p>
 
 
+![A2](https://github.com/user-attachments/assets/fcf180e9-0385-4b7f-942b-31c26d7c1b3e)
   
