@@ -22,4 +22,22 @@ command.<h1>
 
 
 ![A2](https://github.com/user-attachments/assets/fcf180e9-0385-4b7f-942b-31c26d7c1b3e)
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+<h1>Configure your system in such a way that when a user type and executes a describe command from anywhere of the system it must list all the files and folders of the user's current directory.</h1>
+
+<p><b>Step 1: </b>Move to the root directory and edit the /etc/bash.bashrc file to add a global alias.</p>
+<p><b>Step 2: </b>Save the changes to the /etc/bash.bashrc file.</p>
+<p><b>Step 3: </b>Reload the terminal to apply the changes. </p>
+<p><b>Step 4: </b>After Reloading then enter ‘describe’ in the terminal then it shows current directory file</p>
+![A32](https://github.com/user-attachments/assets/f76ede5f-117b-45a1-852d-48a4e36f73dc)
+
+![A31](https://github.com/user-attachments/assets/95590e31-90be-4548-b95b-1b256dd72397)
+
+
+
+
+
   
