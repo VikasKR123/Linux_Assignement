@@ -194,18 +194,17 @@ hai
 ![Screenshot from 2024-09-03 22-56-24](https://github.com/user-attachments/assets/8f670185-2cec-4fd9-9269-24496fe7b072)
 
 
-
-	<h4><b>STEP4:</b> Once every file is set up, we need to restart the Postfix server by running sudo systemctl restart postfix </h4>
-	<h4><b> STEP5:</b> And then run by using <b>echo "This is a test email body" | mailx -s "Test Subject" vikaskarbail@gmail.com
+<h4> <b>STEP4:</b> Once every file is set up, we need to restart the Postfix server by running sudo systemctl restart postfix </h4>
+<h4> <b> STEP5:</b> And then run by using <b>echo "This is a test email body" | mailx -s "Test Subject" vikaskarbail@gmail.com
 </b></h4>
 
 
 ![Screenshot from 2024-09-03 22-49-23](https://github.com/user-attachments/assets/b32c8168-55a5-490e-9fee-e1f420ecb669)
 
-
+Sender Email
 <img width="1440" alt="Screenshot 2024-09-03 at 10 49 41 PM" src="https://github.com/user-attachments/assets/05d9b758-c11f-4623-bebf-b11199710cfc">
 
-
+Recieved Email
 <img width="1440" alt="Screenshot 2024-09-03 at 10 50 19 PM" src="https://github.com/user-attachments/assets/03613e5c-f2d6-463a-a435-6fc6a161ba0c">
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
