@@ -101,7 +101,10 @@ echo "Uncompression process completed."</pre>
 
 <h2>finding the files use "research.gz" and write a single command which will find the file and uncompress it. (No pipe("|") is allowed).</h2>
 
-<p> gunzip $(find / -name Reasearch.*) </p>
+<p> <b> gunzip $(find / -name Reasearch.*) </b> </p>
+
+<p> The command gunzip $(find / -name Research.*) searches for files named Research.* across the entire file system, and if any of the found files are compressed (with a .gz extension), they will be uncompressed using gunzip. </p>
+
 ![Github123](https://github.com/user-attachments/assets/77dec74a-6e63-4493-8e50-2a2e3b20751c)
 
 
