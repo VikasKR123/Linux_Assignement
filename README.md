@@ -177,18 +177,18 @@ hai
 
 <p>and then press ctrl+d then message is sent</p>
 
-       <pre>		<h1> OR</h1>   </pre>
+------------------------------------ ----------------------
 
 
 
-	<h4><b>STEP1:</b> To do this, we need to install mailx by using sudo apt-get install mailutils.</h4>
-	<h4><b> STEP2:</b> Make changes to `main.cf` by using `sudo nano /etc/postfix/main.cf`, adding `inet_protocols=ipv4` and setting `relayhost` to your SMTP server with port number 587.</h4>
-<
+<h4><b>STEP1:</b> To do this, we need to install mailx by using sudo apt-get install mailutils.</h4>
+<h4><b> STEP2:</b> Make changes to `main.cf` by using `sudo nano /etc/postfix/main.cf`, adding `inet_protocols=ipv4` and setting `relayhost` to your SMTP server with port number 587.</h4>
+
 
 ![main cf](https://github.com/user-attachments/assets/10463d55-0808-4828-9664-75f7fbc37ddc)
 
 
-	<h4><b>STEP3:</b> In the file /etc/postfix/sasl/sasl_passwd, we need to add the SMTP configuration with the sender's email and app password using sudo nano.</h4>
+<h4><b>STEP3:</b> In the file /etc/postfix/sasl/sasl_passwd, we need to add the SMTP configuration with the sender's email and app password using sudo nano.</h4>
 
 
 ![Screenshot from 2024-09-03 22-56-24](https://github.com/user-attachments/assets/8f670185-2cec-4fd9-9269-24496fe7b072)
