@@ -99,6 +99,13 @@ echo "Uncompression process completed."</pre>
 
 ![A43](https://github.com/user-attachments/assets/d405b5d5-a39e-4b80-b7f5-d386874ece77)
 
+<h2>finding the files use "research.gz" and write a single command which will find the file and uncompress it. (No pipe("|") is allowed).</h2>
+
+<p> gunzip $(find / -name Reasearch.*) </p>
+![Github123](https://github.com/user-attachments/assets/77dec74a-6e63-4493-8e50-2a2e3b20751c)
+
+
+
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
