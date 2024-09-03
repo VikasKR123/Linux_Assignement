@@ -177,6 +177,36 @@ hai
 
 <p>and then press ctrl+d then message is sent</p>
 
+       <pre>		<h1> OR</h1>   </pre>
+
+
+<pre>
+	<h4><b>STEP1:</b> To do this, we need to install mailx by using sudo apt-get install mailutils.</h4>
+	<h4><b> STEP2:</b> Make changes to `main.cf` by using `sudo nano /etc/postfix/main.cf`, adding `inet_protocols=ipv4` and setting `relayhost` to your SMTP server with port number 587.</h4>
+</pre>
+
+![main cf](https://github.com/user-attachments/assets/10463d55-0808-4828-9664-75f7fbc37ddc)
+
+<pre>
+	<h4><b>STEP3:</b> In the file /etc/postfix/sasl/sasl_passwd, we need to add the SMTP configuration with the sender's email and app password using sudo nano.</h4>
+</pre>
+
+![Screenshot from 2024-09-03 22-56-24](https://github.com/user-attachments/assets/8f670185-2cec-4fd9-9269-24496fe7b072)
+
+
+<pre>
+	<h4><b>STEP4:</b> Once every file is set up, we need to restart the Postfix server by running sudo systemctl restart postfix </h4>
+	<h4><b> STEP5:</b> And then run by using <b>echo "This is a test email body" | mailx -s "Test Subject" vikaskarbail@gmail.com
+</b></h4>
+</pre>
+
+![Screenshot from 2024-09-03 22-49-23](https://github.com/user-attachments/assets/b32c8168-55a5-490e-9fee-e1f420ecb669)
+
+
+<img width="1440" alt="Screenshot 2024-09-03 at 10 49 41 PM" src="https://github.com/user-attachments/assets/05d9b758-c11f-4623-bebf-b11199710cfc">
+
+
+<img width="1440" alt="Screenshot 2024-09-03 at 10 50 19 PM" src="https://github.com/user-attachments/assets/03613e5c-f2d6-463a-a435-6fc6a161ba0c">
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
