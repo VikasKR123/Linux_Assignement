@@ -244,3 +244,19 @@ To check the status of the service.
 
  sudo nano /etc/systemd/system/system.service
 
+
+
+
+ [Unit]
+Description=Showtime Service
+
+[Service]
+ExecStart=/usr/local/bin/showtime/showtime.sh
+ExecStop=/bin/bash -c "pkill -f '/usr/local/bin/showtime/showtime.sh'"
+Restart=always
+StandardOutput=append:/home/sigmoid/showtime1.log
+StandardError=append:/home/sigmoid/showtime1.log
+
+[Install]
+WantedBy=multi-user.target
+
