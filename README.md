@@ -226,6 +226,8 @@ Login as root and create a directory in root
 
 Create the shell script file.
  # nano /usr/local/bin/showtime/showtime.sh
+# sudo nano /usr/local/bin/showtime/showtime.sh
+
 and then put the below content
 </pre>
 ![Screenshot from 2024-08-30 23-03-07](https://github.com/user-attachments/assets/66e80762-4bd7-4a20-9b3a-ea3cdf463ec9)
