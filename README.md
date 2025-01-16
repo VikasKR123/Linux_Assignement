@@ -124,12 +124,8 @@ Note:- Don’t use the chmod command.
 the access permissions for the users.</h4>
 
 <pre>
-	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ sudo  nano /etc/profile
+	
 	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ sudo nano /etc/bash.bashrc
-	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ nano ~/ .bashrc
-	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ nano ~/ .zshrc
-	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ source  ~/.zshrc
-    		bash: /home/sigmoid/.zshrc: Permission denied
 	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ touch vikas
 	sigmoid@sigmoid-ThinkPad-L470-W10DG:~$ ls -ltr vikas
 
