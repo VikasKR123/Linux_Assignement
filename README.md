@@ -245,3 +245,6 @@ To check the status of the service.
 </pre>
 ![Screenshot from 2024-08-30 23-12-36](https://github.com/user-attachments/assets/bc35df12-8984-49c3-a278-f6cfa5a7c23e)
 
+
+ sudo nano /etc/systemd/system/system.service
+
